@@ -1,0 +1,2 @@
+# Razor-Pages-Banking-System
+Banking System (ASP.NET: Razor Pages, Entity Framework, Ajax). In this project I applied Layered Architecture for the server-side code and Design Patterns within the application, accessed Microsoft SQL Server Express with Entity Framework, which uses LINQ. For high performance used Caching Servers: Couchbase and Redis. I have also utilized Identity Framework as a security infrastructure for the system.
