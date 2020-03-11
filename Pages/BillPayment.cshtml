@@ -1,0 +1,31 @@
+﻿@page
+@model BankRPEF.Pages.BillPaymentModel
+@{
+    ViewData["Title"] = "BillPayment";
+}
+
+<h1>Bill payment</h1>
+<form method="post">
+    <table class="table">
+        <tr>
+            <td>Your checking balance: </td>
+            <td>@Model.CheckingBalance</td>
+        </tr>
+        <tr>
+            <td>Payee Account Number</td>
+            <td><input asp-for="PayeeAccountNumber" /></td>
+        </tr>
+        <tr>
+            <td>Payment Amount</td>
+            <td><input asp-for="PaymentAmount" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Pay Bill" class="btn-success" />
+            </td>
+        </tr>
+    </table>
+    <div>@Model.Message</div>
+</form>
+

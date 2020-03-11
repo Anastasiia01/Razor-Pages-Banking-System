@@ -1,0 +1,31 @@
+﻿@page
+@model BankRPEF.Pages.XferStoCModel
+@{
+    ViewData["Title"] = "XferStoC";
+}
+
+    <h1>Xfer Saving To Checking</h1>
+<form method="post">
+    <table class="table">
+        <tr>
+            <td>Saving Balance</td>
+            <td>Checking Balance</td>
+        </tr>
+        <tr>
+            <td>@Model.SavingBalance</td>
+            <td>@Model.CheckingBalance</td>
+        </tr>
+        <tr>
+            <td>Transfer Amount</td>
+            <td><input asp-for="TransferAmount" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Transfer" class="btn-success" />
+            </td>
+        </tr>
+    </table>
+    <div>@Model.Message</div>
+</form>
+
